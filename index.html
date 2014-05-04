@@ -12,26 +12,155 @@
 
 </head>
 <body class="bg-big">
-  <header></header>
+  <header>
+    <nav class="navbar navbar-inverse" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Andri Kurnia</a>
+        </div>
+      </div>
+    </nav>
+    <div class="page-header-2">
+      <div class="container text-center">
+        <h1>Curriculum Vitae</h1>
+      </div>
+    </div>
+  </header>
   <div class="container">
     <div class="row">
-      <div class="col-md-6">
-        <div class="pane">
-          Gogogogo
+      <div class="col-md-7">
+
+        <div class="pane pane-1">
+          <div class="pane-header">
+            <h2><i class="fa fa-user fa-fw "></i> Personal Info</h2>
+          </div>
+          <div class="pane-body">
+            <ul class="personal-info">
+              <li class="pl-15">
+                <h4><i class="fa fa-male fa-fw"></i> Andri Kurnia Akbaludin</h4>
+              </li>
+              <li class="pl-15">
+                <i class="fa fa-gift fa-fw"></i> March, 14 1995 ( 19 years old )
+              </li>
+              <li>
+                <ul class="location">
+                  <li>
+                    <i class="fa fa-map-marker fa-fw"></i> Cimahi ,Indonesia
+                  </li>
+                  <li class="pl-30">
+                    <p>Jln. Pasantren no 103/33 RT2/8 Cibabat, Cimahi Utara<br>
+                    40513 Jawa Barat, Indonesia</p>
+                  </li>
+                </ul>
+              </li>
+              <li class="pl-15" style="font-family: segoe ui">
+                <i class="fa fa-mobile-phone fa-fw"></i> +62 813-2034-8140
+              </li>
+              <li>
+                <i class="fa fa-envelope fa-warp-buble fa-blue"></i> <a href="mailto:andrikurnia@live.com">andrikurnia@live.com</a>
+              </li>
+              <li>
+                <i class="fa fa-twitter fa-warp-buble fa-twitter"></i> <a href="https://twitter.com/andrkrn">@andrkrn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pane pane-3">
+          <div class="pane-header">
+            <h2><i class="fa fa-book fa-fw"></i> Education</h2>
+          </div>
+          <div class="pane-body">
+            <ul class="list-style-2">
+              <li>SMP Negeri 2 Cimahi</li>
+              <li>SMK Negeri 1 Cimahi</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pane pane-4">
+          <div class="pane-header">
+            <h2><i class="fa fa-thumb-tack fa-fw"></i> Work Experience</h2>
+          </div>
+          <div class="pane-body">
+            <ul class="list-style-2">
+              <li>WEB DEVELOPER</li>
+              <ul class="list-style-2 pl-30" style="list-style-type: circle">
+                <li>CV. EDUSARANA SEMARANG</li>
+                <li>41 Studio</li>
+              </ul>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="col-md-3">
-        <div class="pane">
-          Gogogogo
+
+      <div class="col-md-5 mb-10">
+
+        <div class="pane pane-2">
+          <div class="pane-header">
+            <h2><i class="fa fa-code fa-fw"></i> Technical Skills</h2>
+          </div>
+          <div class="pane-body">
+            <ul class="list-style-2">
+              <li>
+                HTML 
+                <span class="badge pull-right ml-5">Good</span>
+                <span class="badge pull-right">100</span></li>
+              <li>
+                PHP 
+                <span class="badge pull-right ml-5">Bad</span> 
+                <span class="badge pull-right">100</span></li>
+              <li>
+                Ruby
+                <span class="badge pull-right ml-5">Ok</span> 
+                <span class="badge pull-right">100</span></li>
+              <li>
+                Ruby on Rails
+                <span class="badge pull-right ml-5">100</span> 
+                <span class="badge pull-right">100</span></li>
+              <li>
+                CSS
+                <span class="badge pull-right ml-5">100</span> 
+                <span class="badge pull-right">100</span></li>
+              <li>
+                Javascript
+                <span class="badge pull-right ml-5">100</span> 
+                <span class="badge pull-right">100</span></li>
+            </ul>
+          </div>
         </div>
-      </div>
-      <div class="col-md-3">
-        <div class="pane">
-          Gogogogo
+
+        <div class="pane pane-5">
+          <div class="pane-header">
+            <h2><i class="fa fa-bullhorn fa-fw"></i> Languages</h2>
+          </div>
+          <div class="pane-body">
+            <ul class="list-style-2">
+              <li>Indonesian</li>
+              <li>English</li>
+            </ul>
+          </div>
         </div>
+
       </div>
     </div>
   </div>
+  <footer class="footer">
+    <div class="container">
+      Footer
+    </div>
+  </footer>
+  <script type="text/javascript">
+  var container = document.querySelector('#container');
+  var msnry = new Masonry( container, {
+    // options
+    columnWidth: 200,
+    itemSelector: '.col-md-5'
+  });
+  </script>
+  <script type="text/javascript" src="js/jquery-1.10.2.js"></script>
+  <script type="text/javascript" defer="defer" src="js/mansonry.js"></script>
   <script type="text/javascript" defer="defer" src="js/bootstrap.js"></script>
 </body>
 </html>

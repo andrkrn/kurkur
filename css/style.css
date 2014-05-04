@@ -2,20 +2,60 @@
 * Andri Kurnia
 */
 
+@import url(http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700);
+
+body {
+  font-family: 'Raleway', 'Segoe UI', 'Arial';
+}
+
 header {
-  height: 120px;
+  margin-bottom: 20px;
+}
+
+.navbar {
+  margin-bottom: 0px;
+  border-radius: 0px;
+}
+
+.navbar-inverse {
+  background-color: #fff;
+  border-width: 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-brand:hover {
+  color: #222;
+}
+
+.page-header-2 {
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+footer {
+  margin-top: 20px;
+  background-color: #eee;
+  padding: 20px 15px 40px;
 }
 
 .bg-big {
-  background: url('../images/walk_with_me-wallpaper-2560x1600.jpg') center top;
-  /*background: url('../images/purple_aurora_2-wallpaper-2560x1600.jpg') center top;*/
+  background-color: #f6f6f6;
+  /*background: url('../images/walk_with_me-wallpaper-2560x1600.jpg') center top;*/
+  /*background: url('../images/1.jpg') center top;*/
 }
 
 /* Pane */
 .pane {
   padding: 15px 40px;
-  background: #f2f2f2;
-  border-bottom: 3px solid #333; 
+  background: #fff;
+  border: solid #ddd;
+  border-width: 1px 1px 3px 1px;
+  border-bottom-color: #999;
+
+  margin-bottom: 10px;
+
+  color: #222;
 
   border-radius: 3px;
   -moz-border-radius: 3px;
@@ -23,5 +63,107 @@ header {
   -o-border-radius: 3px;
 }
 
-.pane-user {
+.pane-1 {
+  border-bottom-color: #ff4136; 
+}
+
+.pane-2 {
+  border-bottom-color: #0074D9;
+}
+
+.pane-3 {
+  border-bottom-color: #2ECC40;
+}
+
+.pane-4 {
+  border-bottom-color: #85144B; 
+}
+
+.pane-5 {
+  border-bottom-color: #B10DC9;
+}
+
+.pane-header {
+  border-bottom: 2px solid #333;
+}
+
+ul.personal-info {
+  font-family: 'Raleway';
+  font-weight: 500;
+  font-size: 16px;
+  padding-left: 0px;
+  list-style: none;
+  margin-top: 10px;
+}
+
+ul.personal-info > li {
+  margin-bottom: 4px;
+  border-bottom: 1px solid #eee;
+  padding: 15px 10px;
+}
+
+ul.personal-info ul.location {
+  list-style: none;
+  padding-left: 5px;
+}
+
+.fa-warp-buble::before {
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.fa-red::before {
+  background-color: #ff4136;
+  color: #fff;
+}
+
+.fa-orange::before {
+  background-color: #FF851B;
+  color: #fff;
+}
+
+.fa-blue::before {
+  background-color: #0074D9;
+  color: #fff;
+}
+
+.fa-twitter::before {
+  background: #4099FF;
+  color: #fff;
+}
+
+
+
+/* PADDING */
+.pl-15 {padding-left: 15px !important}
+.pl-30 {
+  padding-left: 30px !important;
+}
+
+/* MARGIN */
+.mb-10 {margin-bottom: 10px !important}
+
+.ml-5 {margin-left: 5px !important}
+
+
+/* LIST STYLE */
+.list-style-2 {
+  list-style: none;
+  padding-left: 0px;
+  margin-top: 10px;
+}
+
+.list-style-2 > li {
+  padding: 10px 15px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #eee;
+  border-radius: 4px;
+  font-weight: 600;
+}
+
+
+/* BADGE */
+
+.badge {
+  border-radius: 3px;
 }
