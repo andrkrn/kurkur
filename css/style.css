@@ -3,6 +3,7 @@
 */
 
 @import url(http://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
 body {
   font-family: 'Raleway', 'Segoe UI', 'Arial';
@@ -29,14 +30,30 @@ header {
 }
 
 .page-header-2 {
-  padding: 20px 0;
-  border-bottom: 1px solid #ddd;
+  background-color: #343434;
+  border-bottom: 1px solid #222;
+}
+
+.page-header-2 h1 {
+  color: #ddd;
+  text-shadow: 0 1px 1px #111;
 }
 
 footer {
+  background: url('../images/footer.jpg') repeat-x center top;
   margin-top: 20px;
-  background-color: #eee;
+  background-color: #343434;
+  min-height: 200px;
   padding: 20px 15px 40px;
+}
+
+footer .site-name {
+  color: #eee;
+  text-transform: uppercase;
+  font: 600 italic 5rem 'Open Sans';
+  padding-top: 30px;
+  text-shadow: 2px 1px 0 #222;
+  border-bottom: 1px solid #fff;
 }
 
 .bg-big {
@@ -88,7 +105,6 @@ footer {
 }
 
 ul.personal-info {
-  font-family: 'Raleway';
   font-weight: 500;
   font-size: 16px;
   padding-left: 0px;
@@ -166,4 +182,26 @@ ul.personal-info ul.location {
 
 .badge {
   border-radius: 3px;
+}
+
+.badge-good > .badge {
+  background-color: #0074D9;
+}
+
+.badge-ok > .badge {
+  background-color: #2ECC40;
+}
+
+.badge-bad > .badge {
+  background-color: #FF4136;
+}
+
+/* Font Awesome */
+.fa-rotate-15 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(15deg);
+  -moz-transform: rotate(15deg);
+  -ms-transform: rotate(15deg);
+  -o-transform: rotate(15deg);
+  transform: rotate(15deg);
 }

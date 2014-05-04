@@ -1,0 +1,11 @@
+/* TEAM */
+Your title: Andri Kurnia Akbaludin
+Site: hello@andrkrn.web.id
+Twitter: @andrkrn
+Location: Cimahi, Indonesia
+
+/* SITE */
+Last update: 2014/05/04
+Standards: HTML5, CSS3,..
+Components: jQuery
+Software: Software used for the development
