@@ -29,7 +29,7 @@
       </div>
     </div>
   </header>
-  <div class="container-fluid" style="margin-top:-20px;">
+  <div class="container-fluid">
     <div class="row">
       <div id="google-map" class="map-container" style="height: 400px;"></div>
       <script type="text/javascript">
@@ -55,12 +55,8 @@
           position: myLatlng, // Position marker to coordinates
           icon:image, //use our image as the marker
           map: map, // assign the market to our map variable
-          title: 'Click to visit our company on Google Places' // Marker ALT Text
+          title: 'Click to visit my place in Google Maps' // Marker ALT Text
         });
-        
-        //  google.maps.event.addListener(marker, 'click', function() { // Add a Click Listener to our marker 
-        //    window.location='http://www.snowdonrailway.co.uk/shop_and_cafe.php'; // URL to Link Marker to (i.e Google Places Listing)
-        //  });
         
         var infowindow = new google.maps.InfoWindow({ // Create a new InfoWindow
             content:"<h3>Snowdown Summit Cafe</h3><p>Railway Drive-through available.</p>" // HTML contents of the InfoWindow

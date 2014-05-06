@@ -10,7 +10,8 @@ body {
 }
 
 header {
-  margin-bottom: 20px;
+  width: 100%;
+  z-index: 100;
 }
 
 .navbar {
@@ -25,8 +26,20 @@ header {
 }
 
 .navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav > li > a {
+  color: #333;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-brand:hover {
-  color: #222;
+  color: #111;
+  background-color: #eee;
+}
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #111;
+  background-color: #eee;
 }
 
 .page-header-2 {
@@ -151,6 +164,7 @@ ul.personal-info ul.location {
 
 
 /* PADDING */
+.pt-20 {padding-top: 20px !important}
 .pl-15 {padding-left: 15px !important}
 .pl-30 {
   padding-left: 30px !important;
